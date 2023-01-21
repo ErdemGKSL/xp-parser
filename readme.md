@@ -1,4 +1,4 @@
-## Basic level parsed
+## Basic level parser
 
 ```js
 const { Parser } = require("xp-parser");
@@ -19,6 +19,7 @@ const parse = parser.parseXP(100);
 //     "currentLevelXp": 100,
 //     "nextLevelXp": 900,
 //     "currentRelativeXp": 0,
+//     "nextRelativeXp": 800
 // }
 
 ```

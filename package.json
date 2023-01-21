@@ -1,6 +1,6 @@
 {
   "name": "xp-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parses xp and level",
   "main": "dist/index.js",
   "type": "commonjs",
