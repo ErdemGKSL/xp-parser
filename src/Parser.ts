@@ -22,17 +22,14 @@ export class Parser {
         this.multiplier = multiplier;
     }
 
-    // parse xp to level
     parseXpToLevel(xp: number): number {
         return Math.floor(Math.pow((xp - this.base) / this.multiplier, 1 / this.exponant));
     }
 
-    // parse level to xp
     parseLevelToXp(level: number): number {
         return Math.floor(this.base + this.multiplier * Math.pow(level, this.exponant));
     }
 
-    // parse xp to next level and current level and needed xp and current xp and current level xp and next level xp
     parseXp(xp: number): ParsedXP {
         const level = this.parseXpToLevel(xp);
         const nextLevel = level + 1;
