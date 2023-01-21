@@ -2,6 +2,16 @@ import { ParsedXP } from "./ParsedXP";
 
 export class BaseParser {
 
+  /** @deprecated */
+  parseXpToLevel(xp: number): number {
+    return this.xpToLevel(xp);
+  }
+
+  /** @deprecated */
+  parseLevelToXp(level: number): number {
+    return this.levelToXp(level);
+  }
+
   xpToLevel(xp: number): number {
     return 0;
   }
