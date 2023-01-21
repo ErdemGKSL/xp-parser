@@ -2,21 +2,21 @@ import { ParsedXP } from "./ParsedXP";
 
 export class BaseParser {
 
-  parseXpToLevel(xp: number): number {
+  xpToLevel(xp: number): number {
     return 0;
   }
 
-  parseLevelToXp(level: number): number {
+  levelToXp(level: number): number {
     return 0;
   }
 
   parseXp(xp: number): ParsedXP {
-    const level = this.parseXpToLevel(xp);
+    const level = this.xpToLevel(xp);
     const nextLevel = level + 1;
-    const neededXp = this.parseLevelToXp(nextLevel) - xp;
+    const neededXp = this.levelToXp(nextLevel) - xp;
     const currentXp = xp;
-    const currentLevelXp = this.parseLevelToXp(level);
-    const nextLevelXp = this.parseLevelToXp(nextLevel + 1);
+    const currentLevelXp = this.levelToXp(level);
+    const nextLevelXp = this.levelToXp(nextLevel + 1);
     const currentRelativeXp = currentXp - currentLevelXp;
     const nextRelativeXp = nextLevelXp - currentLevelXp;
 

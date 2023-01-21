@@ -14,11 +14,11 @@ export class ExponantialParser extends BaseParser {
         this.multiplier = multiplier;
     }
 
-    override parseXpToLevel(xp: number): number {
+    override xpToLevel(xp: number): number {
         return Math.floor(Math.pow((xp - this.base) / this.multiplier, 1 / this.exponant));
     }
 
-    override parseLevelToXp(level: number): number {
+    override levelToXp(level: number): number {
         return Math.floor(this.base + this.multiplier * Math.pow(level, this.exponant));
     }
 

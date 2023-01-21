@@ -13,11 +13,11 @@ export class LinearParser extends BaseParser {
     this.multiplier = multiplier;
   }
 
-  override parseXpToLevel(xp: number): number {
+  override xpToLevel(xp: number): number {
     return Math.floor((xp - this.base) / this.multiplier);
   }
 
-  override parseLevelToXp(level: number): number {
+  override levelToXp(level: number): number {
     return Math.floor(this.base + this.multiplier * level);
   }
 
