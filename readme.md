@@ -1,8 +1,8 @@
 ## Basic level parser
 
 ```js
-const { Parser } = require("xp-parser");
-const parser = new Parser(0, 100, 2);
+const { ExponantialParser } = require("xp-parser");
+const parser = new ExponantialParser(0, 100, 2);
 
 const xp = parser.parseLevelToXp(1);
 console.log(xp); // 100

@@ -1,1 +1,2 @@
-export { Parser, ParsedXP } from "./Parser";
+export { ExponantialParser } from "./ExponantialParser";
+export { ParsedXP } from "./ParsedXP";
