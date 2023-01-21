@@ -14,7 +14,6 @@ export class LinearParser extends BaseParser {
   }
 
   override parseXpToLevel(xp: number): number {
-    
     return Math.floor((xp - this.base) / this.multiplier);
   }
 
