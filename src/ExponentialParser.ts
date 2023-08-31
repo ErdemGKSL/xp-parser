@@ -1,6 +1,6 @@
 import { BaseParser } from "./BaseParser";
 
-export class ExponantielParser extends BaseParser {
+export class ExponentialParser extends BaseParser {
     /** @private */
     exponant: number;
     /** @private */
